@@ -1,0 +1,27 @@
+---
+title: "STAT3675_Final_Project"
+output: pdf_document
+date: "2024-12-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(readr)
+
+data <- read_csv("all_seasons.csv")
+
+str(data)
+head(data)
+```
+```{r}
+sum(is.na(data))
+
+summary(data)
+```
+
